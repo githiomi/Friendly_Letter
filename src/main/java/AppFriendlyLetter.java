@@ -23,8 +23,8 @@ public class AppFriendlyLetter {
                         "<p>How are you? I hope that you are having a nice weekend. I'm vacationing in the Iceland while I learn programming! </p>" +
                         "<p>Friend, you would not believe how cold it is here. I should have gone to Hawaii instead.</p>" +
                         "<p>But I like programming a lot, so I've got that going for me. </p>" +
-                        "<p>Looking forward to seeing you soon. I'll bring you back a souvenir. </p></a>" +
-                        "<a href = '/photos'><button>Photos</button>" +
+                        "<p>Looking forward to seeing you soon. I'll bring you back a souvenir. </p>" +
+                        "<a href = '/photos'><button>Photos</button></a>" +
                         "<p>Cheers,</p>" +
                         "<p>Travel Enthusiast Jane</p>" +
                         "</body>" +
@@ -41,7 +41,8 @@ public class AppFriendlyLetter {
                         "<body>" +
                         "<h1>Favorite Traveling Photos</h1>" +
                         "<ul>" +
-                        "<li><img src='/images/image1.jpg' alt='A photo of a developer.'/></li>" + "<li><img src='/images/image2.png' alt='A photo of another developer.'/></li>" + "</ul>" + "</body>" + "</html>" );
+                        "<li><img src='/images/image1.jpg' alt='A photo of a developer.' style = 'margin : '100px;' width = '250px' height = '250px'/></li>" +
+                        "<li><img src='/images/image2.png' alt='A photo of another developer.' style = 'margin : 50px;' width = '250px' height = '250px' /></li>" + "</ul>" + "</body>" + "</html>" );
 
     }
 }
