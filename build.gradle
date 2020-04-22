@@ -7,7 +7,7 @@ plugins {
 group 'com.moringa.friendlyletter'
 version '1.0-SNAPSHOT'
 
-mainClassName = "App"
+mainClassName = "AppFriendlyLetter"
 
 sourceCompatibility = 1.8
 
