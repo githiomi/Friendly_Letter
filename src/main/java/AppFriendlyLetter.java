@@ -1,3 +1,4 @@
+import com.sun.tools.javac.file.PathFileObject;
 import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
 
@@ -14,11 +15,13 @@ public class AppFriendlyLetter {
         staticFileLocation("/public");
 
         get("/", (request, response) -> {
-            return new ModelAndView(new HashMap(), "hello.hbs");
+            Map<String, Object> helloModel = new HashMap<String, Object>();
+            return new ModelAndView(helloModel, "hello.hbs");
                 }, new HandlebarsTemplateEngine());
 
         get("/photos", (request, response) -> {
-            return new ModelAndView(new HashMap(), "dev_photos.hbs");
+            Map<String, Object> photosModel = new HashMap<String, Object>();
+            return new ModelAndView(photosModel, "dev_photos.hbs");
                 }, new HandlebarsTemplateEngine());
 
     }

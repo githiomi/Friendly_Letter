@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Hello Friend!</title>
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-</head>
-<body>
-<h1>Favorite Traveling Photos</h1>
+{{#block "pageheader"}} <h1>These are the photos from my Travel</h1> {{/block}}
+
+{{#block "content"}}
+
 <ul>
-    <li><img src='/images/image1.jpg' alt='A photo of a developer.' width='400px' height='400px' style='margin:50px;' /></li>
-    <li><img src='/images/image2.png' alt='A photo of another developer.' width='400px' height='400px' style='margin:50px;' /></li>
+    <li style='list-style:none;'><img src='/images/image1.jpg' alt='A photo of a developer.' width='400px' height='400px' style='margin:50px;' /></li>
+    <li style='list-style:none;'><img src='/images/image2.png' alt='A photo of another developer.' width='400px' height='400px' style='margin:50px;' /></li>
 </ul>
-</body>
-</html>
+
+{{/block}}
+
+{{> layout.hbs}}
